@@ -1,41 +1,24 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Codex Clã - Ecos de Yggdrasil</title>
-    <style>
-        body {
-            <!DOCTYPE html>
-            <html lang="pt-BR">
-            <head>
-                <meta charset="utf-8">
-                <meta name="viewport" content="width=device-width, initial-scale=1">
-                <title>Códex — Ecos de Yggdrasil</title>
-                <meta name="description" content="Códex do clã Ecos de Yggdrasil — leitura, busca e navegação interativa">
-                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css">
-                <style>
-                    :root{ --bg:#0f1720; --card:#0b1320; --muted:#9aa6b2; --accent:#d9b08c; --highlight:#ffd54a; --glass: rgba(255,255,255,0.03); --radius:12px; --max-width:1200px; }
-                    .theme-light{--bg:#f5f6f8;--card:#fff;--muted:#52606a;--accent:#8b0000;--highlight:#ffd54a;--glass:rgba(0,0,0,0.03)}
-                    html,body{height:100%;}
-                    body{margin:0; font-family:Inter, 'Segoe UI', Arial, sans-serif; background:linear-gradient(180deg,var(--bg),#071018); color:var(--accent); display:flex; justify-content:center; padding:28px; box-sizing:border-box;}
-                    .app{width:100%;max-width:var(--max-width);} header.app-header{display:flex;align-items:center;gap:16px;justify-content:space-between;margin-bottom:18px}
-                    .title{display:flex;gap:12px;align-items:center} .logo{width:68px;height:68px;border-radius:10px;background:linear-gradient(135deg,var(--highlight),var(--accent));display:flex;align-items:center;justify-content:center;color:#091012;font-weight:700;font-size:18px}
-                    h1{margin:0;font-size:20px;color:var(--card);} .meta{font-size:13px;color:var(--muted)}
-                    .controls{display:flex;gap:10px;align-items:center} .search{display:flex;align-items:center;gap:8px;background:var(--card);padding:10px;border-radius:10px;box-shadow:0 6px 18px rgba(2,6,23,0.6)}
-                    input#searchInput{border:0;background:transparent;color:var(--accent);outline:none;width:360px} select#sectionFilter{padding:8px;border-radius:8px;border:0;background:var(--bg);color:var(--muted)} button.icon{background:var(--card);border:0;padding:8px;border-radius:8px;color:var(--muted);cursor:pointer}
-                    main.container{display:grid;grid-template-columns:300px 1fr;gap:18px} nav#toc{position:sticky;top:24px;height:calc(100vh - 48px);overflow:auto;padding:18px;border-radius:var(--radius);background:var(--card);box-shadow:0 8px 32px rgba(2,6,23,0.6)}
-                    nav#toc h2{margin-top:0;color:var(--accent)} nav#toc ul{list-style:none;padding:0;margin:0} nav#toc li{margin:8px 0} nav#toc a{color:var(--muted);text-decoration:none;padding:6px 8px;border-radius:8px;display:block} nav#toc a.active{background:var(--glass);color:var(--highlight)}
-                    section#reader{padding:18px;border-radius:var(--radius);background:linear-gradient(180deg,var(--card),rgba(0,0,0,0.02));min-height:70vh;box-shadow:0 10px 30px rgba(2,6,23,0.6)} .section{margin-bottom:20px;padding:14px;border-radius:10px;background:linear-gradient(180deg,transparent,rgba(0,0,0,0.02))}
-                    .section h2{margin:0 0 8px 0;color:var(--highlight)} .section .meta{font-size:12px;color:var(--muted);margin-bottom:8px} .section .body{background:transparent;color:var(--muted);white-space:pre-wrap;font-family:inherit}
-                    .section .actions{margin-top:8px;display:flex;gap:8px}
-                    .btn{background:transparent;border:1px solid var(--glass);color:var(--muted);padding:6px 8px;border-radius:8px;cursor:pointer}
-                    footer{margin-top:18px;color:var(--muted);font-size:13px;text-align:center}
-                    @media(max-width:900px){main.container{grid-template-columns:1fr;}.search input#searchInput{width:180px}nav#toc{order:2;height:auto}.app header.app-header{flex-direction:column;align-items:flex-start}}
-                </style>
-                <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
-            </head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Códex — Ecos de Yggdrasil</title>
+  <meta name="description" content="Códex do clã Ecos de Yggdrasil — leitura, busca e navegação interativa">
+
+  <!-- CSS externo -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css">
+
+  <!-- Seu CSS local -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- Scripts externos -->
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+</head>
+<body>
+  <!-- aqui começa o conteúdo -->
+
             <body>
                 <div class="app">
                     <header class="app-header">
