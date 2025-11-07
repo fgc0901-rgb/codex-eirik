@@ -12,9 +12,22 @@
   <!-- Seu CSS local -->
   <link rel="stylesheet" href="./assets/css/style.css">
 
+  <!-- JS local (se existir) -->
+<script src="./assets/js/main.js" defer></script>
+
+  <!-- Logo -->
+<img src="./assets/img/logo.png" alt="Logo Ecos de Yggdrasill">
+
   <!-- Scripts externos -->
-  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+
+<!-- Configuração -->
+<script>
+  const config = JSON.parse(document.getElementById('app-config').textContent);
+  document.querySelector('.content').innerHTML = marked(config.note);
+</script>
+
 </head>
 <body>
   <div class="app">
